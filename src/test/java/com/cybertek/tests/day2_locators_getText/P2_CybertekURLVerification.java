@@ -13,8 +13,14 @@ public class P2_CybertekURLVerification {
         driver.manage().window().maximize();
 
         driver.get("http://practice.cybertekschool.com");
+        String expectedUrl = "cybertekschool";
+        String actualUrl = driver.getCurrentUrl();
+        System.out.println(actualUrl.contains(expectedUrl)?"pass":"fail");
 
+        String expectedTitle = "Practice";
+        String actualTitle =driver.getTitle();
+        System.out.println(actualTitle.equals(expectedTitle)?"pass":"fail");
 
-
+        driver.quit();
     }
 }
