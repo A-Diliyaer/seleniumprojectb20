@@ -12,6 +12,9 @@ public class P2_CybertekURLVerification {
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
 
+        driver.get("http://practice.cybertekschool.com");
+
+
 
     }
 }
